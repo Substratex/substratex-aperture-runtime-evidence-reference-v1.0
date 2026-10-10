@@ -1,0 +1,437 @@
+{
+  "schema_version": "canonical-transcript/1.2",
+  "fixture_type": "calibration",
+  "metadata": {
+    "id": "CAL-FIXED-POINT-001",
+    "category": "fixed_point_completion",
+    "purpose": "A planning run converges into stable invariant completion rather than pathological non-progress.",
+    "expected_semantics": {
+      "trajectory": "Refinement \u2192 convergence \u2192 fixed-point stability",
+      "should_not_cycle": "Recovery \u2192 Transitional \u2192 Unstable after completion",
+      "notes": "Invariant final plan after convergence is healthy fixed-point completion."
+    }
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 1.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Iteration 1: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 2.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Iteration 2: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 3.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Iteration 3: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 4.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Iteration 4: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 5.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Iteration 5: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 6.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Iteration 6: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 7.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Iteration 7: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 8.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Iteration 8: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 9.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Iteration 9: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Refine the deployment plan iteration 10.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Iteration 10: update incorporated. Remaining open issues: permissions, rollback, owner confirmation.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 21,
+      "role": "user",
+      "content": "Continue refinement iteration 11.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 22,
+      "role": "assistant",
+      "content": "Iteration 11: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 23,
+      "role": "user",
+      "content": "Continue refinement iteration 12.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 24,
+      "role": "assistant",
+      "content": "Iteration 12: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 25,
+      "role": "user",
+      "content": "Continue refinement iteration 13.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 26,
+      "role": "assistant",
+      "content": "Iteration 13: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 27,
+      "role": "user",
+      "content": "Continue refinement iteration 14.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 28,
+      "role": "assistant",
+      "content": "Iteration 14: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 29,
+      "role": "user",
+      "content": "Continue refinement iteration 15.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 30,
+      "role": "assistant",
+      "content": "Iteration 15: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 31,
+      "role": "user",
+      "content": "Continue refinement iteration 16.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 32,
+      "role": "assistant",
+      "content": "Iteration 16: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 33,
+      "role": "user",
+      "content": "Continue refinement iteration 17.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 34,
+      "role": "assistant",
+      "content": "Iteration 17: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 35,
+      "role": "user",
+      "content": "Continue refinement iteration 18.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 36,
+      "role": "assistant",
+      "content": "Iteration 18: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 37,
+      "role": "user",
+      "content": "Continue refinement iteration 19.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 38,
+      "role": "assistant",
+      "content": "Iteration 19: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 39,
+      "role": "user",
+      "content": "Continue refinement iteration 20.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 40,
+      "role": "assistant",
+      "content": "Iteration 20: final plan converged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 41,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 21.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 42,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 43,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 22.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 44,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 45,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 23.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 46,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 47,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 24.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 48,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 49,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 25.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 50,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 51,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 26.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 52,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 53,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 27.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 54,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 55,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 28.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 56,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 57,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 29.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 58,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 59,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 30.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 60,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 61,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 31.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 62,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 63,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 32.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 64,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 65,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 33.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 66,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 67,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 34.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 68,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 69,
+      "role": "user",
+      "content": "Confirm final plan checkpoint 35.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 70,
+      "role": "assistant",
+      "content": "Final plan remains unchanged. Permissions validated. Rollback defined. Owner confirmed.",
+      "session_id": "session-1"
+    }
+  ],
+  "incident_markers": []
+}

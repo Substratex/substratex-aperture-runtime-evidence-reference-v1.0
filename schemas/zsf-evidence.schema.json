@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SubstrateX Aperture™ Legacy ZSF Evidence Artifact (Compatibility)",
+  "type": "object",
+  "required": [
+    "meta",
+    "samples",
+    "final"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "adapter_version",
+        "spec_version",
+        "esl_version",
+        "run_id",
+        "hash",
+        "hash_scope",
+        "turns",
+        "assistant_samples",
+        "conformance"
+      ],
+      "properties": {
+        "adapter_version": {
+          "type": "string"
+        },
+        "spec_version": {
+          "type": "string"
+        },
+        "esl_version": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "hash": {
+          "type": "string"
+        },
+        "hash_scope": {
+          "type": "string"
+        },
+        "turns": {
+          "type": "integer"
+        },
+        "assistant_samples": {
+          "type": "integer"
+        },
+        "conformance": {
+          "type": "object"
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "step",
+          "phi",
+          "delta_phi",
+          "regime",
+          "signals"
+        ],
+        "properties": {
+          "step": {
+            "type": "integer"
+          },
+          "phi": {
+            "type": "number"
+          },
+          "delta_phi": {
+            "type": "number"
+          },
+          "regime": {
+            "type": "string"
+          },
+          "basin_exit": {
+            "type": "boolean"
+          },
+          "signals": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "final": {
+      "type": "object"
+    }
+  },
+  "description": "Compatibility schema retained from the earlier telemetry adapter reference stack. Current Aperture public evidence architecture additionally uses Canonical Runtime, Current Evidence Run, Runtime Evidence Passport, and Runtime Evidence Artifact envelopes."
+}

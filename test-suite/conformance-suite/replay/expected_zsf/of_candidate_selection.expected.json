@@ -1,0 +1,12 @@
+{
+  "fixture": "of_candidate_selection",
+  "expected_hash_of_input_fixture": "93f05658c4409be04ec93935ce436d847f69688c0cae508dd4c9ebdc0f8ca6ca",
+  "expected_zsf": "Generate with canonical implementation and commit as golden artifact.",
+  "required_invariants": [
+    "same input -> same output",
+    "same t_star",
+    "same regimes",
+    "same ESL summary",
+    "same OF and lead_time semantics"
+  ]
+}

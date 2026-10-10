@@ -1,0 +1,12 @@
+{
+  "fixture": "precursor_before_failure",
+  "expected_hash_of_input_fixture": "ea7d127170a49eefd27252ec889226e9403c9df6c71a7462c2c33633bbaabd09",
+  "expected_zsf": "Generate with canonical implementation and commit as golden artifact.",
+  "required_invariants": [
+    "same input -> same output",
+    "same t_star",
+    "same regimes",
+    "same ESL summary",
+    "same OF and lead_time semantics"
+  ]
+}

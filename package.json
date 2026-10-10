@@ -1,0 +1,22 @@
+{
+  "name": "substratex-aperture-runtime-evidence-reference",
+  "version": "1.0.0",
+  "description": "Public reference architecture, schemas, provenance, and frozen validation fixtures for SubstrateX Aperture Runtime Evidence Infrastructure.",
+  "private": false,
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "verify:reference": "python3 scripts/verify_reference_suite.py",
+    "verify:fixtures": "python3 scripts/validate_reference_fixtures.py"
+  },
+  "keywords": [
+    "substratex",
+    "aperture",
+    "runtime-evidence",
+    "longitudinal-computational-dynamics",
+    "evidence-governed-computation",
+    "worldline",
+    "ai-observability",
+    "runtime-reconstruction"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md"
+}

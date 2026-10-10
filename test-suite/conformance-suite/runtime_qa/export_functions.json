@@ -1,0 +1,10 @@
+{
+  "id": "export_functions",
+  "checks": [
+    "copy canonical",
+    "download canonical",
+    "download ZSF",
+    "download normalized envelope",
+    "PDF report opens"
+  ]
+}

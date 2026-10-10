@@ -1,0 +1,11 @@
+{
+  "fixture_id": "CAL-STABLE-REPETITION-001",
+  "expected_behavior": {
+    "calibration_goal": "Differentiate healthy repeated acknowledgements from degenerate loop collapse.",
+    "basin_exit": "should not occur before telemetry step 10 under intended semantics",
+    "risk_profile": "Low or Medium, not High",
+    "recovery_required": false,
+    "failure_expected": false
+  },
+  "assertion_type": "calibration_not_strict_conformance"
+}

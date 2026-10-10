@@ -1,0 +1,10 @@
+{
+  "id": "ui_flow",
+  "checks": [
+    "tabs switch",
+    "overview remains clean",
+    "visualization renders",
+    "stability controls visible",
+    "outputs export buttons enabled after run"
+  ]
+}

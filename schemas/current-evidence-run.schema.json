@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.ai/schemas/aperture/current-evidence-run/1.0",
+  "title": "SubstrateX Aperture Current Evidence Run (Public Structural Envelope)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "canonical_identity",
+    "evidence_record",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "aperture.current_evidence_run.public.v1"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "canonical_identity": {
+      "type": "string"
+    },
+    "runtime_event_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "canonical_runtime_spine": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "runtime_playback_frames": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "detectors": {
+      "type": "object"
+    },
+    "temporal_markers": {
+      "type": "object"
+    },
+    "instrument_models": {
+      "type": "object"
+    },
+    "human_read": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "recorder": {
+      "type": "object"
+    },
+    "export": {
+      "type": "object"
+    },
+    "evidence_record": {
+      "type": "object"
+    },
+    "metric_legitimacy_matrix": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "evidence_authority_conformance": {
+      "type": "object"
+    },
+    "claim_boundary": {
+      "type": "object"
+    },
+    "zsf_final": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

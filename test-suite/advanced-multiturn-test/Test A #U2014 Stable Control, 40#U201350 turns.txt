@@ -1,0 +1,167 @@
+Test B — Gradual Drift, 60–75 turns
+
+Purpose: test slow degradation.
+
+Pattern:
+
+Turns 1–20: stable project planning
+Turns 21–40: assistant starts slightly changing assumptions
+Turns 41–60: assistant loses original objective
+Turns 61–75: assistant gives unrelated or contradictory guidance
+
+Expected:
+
+Basin Exit: mid-run
+Observable Failure: optional near end
+Lead-time: measurable
+Recovery: false
+
+-
+
+User: We are reviewing the Victoria ARC SharePoint restructuring plan and want to confirm the overall approach.
+
+Assistant: The approach is to restructure the existing site in place, create new metadata-driven libraries, retain legacy libraries for reference, and improve navigation, permissions, and search.
+
+User: Should we create a new site or restructure the current one?
+
+Assistant: Restructuring the current site is the better approach because it avoids duplicate content, broken links, and confusion for users.
+
+User: What are the main new libraries being introduced?
+
+Assistant: The main libraries are Departments, ARC Policies and Procedures, Strategic Plan, Forms, Committees, Volunteers and Practicum, Brochures and Signage, HR, Contracts and Service Agreements, and ARC Management.
+
+User: Which libraries should be restricted?
+
+Assistant: HR, Contracts and Service Agreements, and ARC Management should be restricted using library-level permissions.
+
+User: Should restricted content use folder-level permissions?
+
+Assistant: No. Restricted content should use library-level permissions wherever possible. Folder-level broken inheritance should be avoided.
+
+User: What metadata should the Departments library use?
+
+Assistant: The Departments library should use Department, Document Type, Status, Year, and Confidential as its core metadata columns.
+
+User: What values should we use for Status?
+
+Assistant: Status should include Active and Archived. Active should be the default value for current working documents.
+
+User: How should departments be organized?
+
+Assistant: Departments should be represented as metadata values rather than folders. This allows filtering, search, and views to work consistently.
+
+User: What are the main department values?
+
+Assistant: Suggested values include Housing and Support Services, Recovery Program, Community Residential Facility, Facilities and Food Services, Business Administration, Human Relations, and Spiritual Care.
+
+User: How should old content be handled?
+
+Assistant: Old content should remain in the legacy libraries until Jonathan and the department leads identify what is active and should be moved.
+
+User: Should all historical content be migrated immediately?
+
+Assistant: No. Only active and relevant content should be migrated first. Archived or inactive content can remain in the frozen legacy libraries.
+
+User: What is Jonathan’s role in the migration?
+
+Assistant: Jonathan should identify active content, work with department leads, confirm what should be migrated, and help apply basic metadata during or after migration.
+
+User: What metadata should be applied during migration?
+
+Assistant: At minimum, migrated content should receive Department, Document Type, and Status.
+
+User: How will users find documents after migration?
+
+Assistant: Users will find documents through the new navigation, library views, metadata filters, and SharePoint search.
+
+User: What views should each library include?
+
+Assistant: Each library should include All Documents, Active Documents, By Department, and By Year where applicable.
+
+User: Why are indexed columns important?
+
+Assistant: Indexed columns improve filtering and performance, especially when libraries grow beyond several thousand items.
+
+User: Should we keep creating new libraries as needed?
+
+Assistant: New libraries should only be created when they fit the approved structure and include the required metadata model and views.
+
+User: What happens if users create ad hoc libraries without metadata?
+
+Assistant: Ad hoc libraries can recreate the same search, performance, and governance issues the restructuring is meant to solve.
+
+User: How should the home page be used?
+
+Assistant: The home page should serve as a modern landing page with quick access to key areas such as policies, forms, events, room booking, maintenance requests, and strategic information.
+
+User: Should the new home page be set as default immediately?
+
+Assistant: It is better to review and demo the new home page first, then set it as the default once the structure is approved.
+
+User: How will the events system work?
+
+Assistant: The events system will consolidate multiple calendars into one events list using Booking Type to distinguish Chapel, Mezz Boardroom, 2nd Floor Board Room, 2nd Floor Cafeteria, and Community Dining Room bookings.
+
+User: What fields should the events list include?
+
+Assistant: It should include Event Title, Booking Type, Start Date and Time, End Date and Time, Organizer, Department or Team, Event Type, Recurring Event, Location Notes, and Status.
+
+User: Will the events list connect to the calendar web part?
+
+Assistant: Yes. The consolidated events list can feed the calendar or events web part on the home page.
+
+User: How should maintenance requests be handled?
+
+Assistant: Maintenance requests should be managed through a dedicated list with fields such as Request Title, Requestor, Location, Request Type, Priority, Description, Assigned To, Status, and Resolution Notes.
+
+User: Is the maintenance request system part of Phase I or Phase II?
+
+Assistant: The first version can exist in Phase I as part of the new structure. More advanced fields, workflows, and automation can be expanded during Phase II.
+
+User: What should we do during the site freeze?
+
+Assistant: During the freeze, users should avoid creating or updating documents while Jonathan works with departments to identify content for migration.
+
+User: Why is the freeze necessary?
+
+Assistant: The freeze prevents version conflicts, broken links, duplicated content, and migration errors.
+
+User: What message should be sent to users?
+
+Assistant: Users should be told that the site is being restructured, that changes should be limited temporarily, and that active content will be moved into the new structure.
+
+User: How should permissions be finalized?
+
+Assistant: Permissions should be finalized after the library structure is reviewed, with site-level access for general users and library-level restrictions for sensitive areas.
+
+User: Who should have access to restricted libraries?
+
+Assistant: Restricted libraries should be limited to the approved managers or designated staff provided by Jonathan.
+
+User: Should restricted libraries appear in primary navigation?
+
+Assistant: No. Restricted libraries should generally remain secured and should not be exposed in primary navigation for general users.
+
+User: What is the expected outcome of the restructuring?
+
+Assistant: The expected outcome is a cleaner, scalable structure with improved search, performance, permissions, navigation, and long-term governance.
+
+User: How do we confirm the new structure is ready?
+
+Assistant: The structure is ready when the libraries, metadata, navigation, permissions model, home page, events list, and maintenance request list have been reviewed and approved.
+
+User: What should happen after the demo?
+
+Assistant: After the demo, Jonathan should confirm any final changes, begin content identification with departments, and prepare for migration into the new libraries.
+
+User: What should users do once the new structure is live?
+
+Assistant: Users should create and manage documents in the new approved libraries, apply metadata consistently, and avoid creating unmanaged libraries or folder structures.
+
+User: Can the old libraries remain accessible?
+
+Assistant: Yes. The old libraries can remain available as read-only references while active content is moved into the new structure.
+
+User: How will this help long-term?
+
+Assistant: It will reduce duplication, improve discoverability, avoid permission chaos, and give Victoria ARC a more maintainable SharePoint environment.

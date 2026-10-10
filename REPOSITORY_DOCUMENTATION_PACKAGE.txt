@@ -1,0 +1,17 @@
+SubstrateX Aperture™ — Runtime Evidence Reference Architecture
+Version 1.0.0
+
+Organization: SubstrateX®
+System: SubstrateX Aperture™
+Scientific framework: Longitudinal Computational Dynamics®
+Empirical object: Longitudinal Computational Behavior
+Architectural discipline: Evidence-Governed Computation™
+Infrastructure category: Runtime Evidence Infrastructure
+Evidentiary output: Runtime Evidence
+Preservation initiative: Evidence Commons™
+
+This repository publishes the public reference architecture, schemas, provenance, conformance posture, and frozen historical test fixtures for Aperture.
+
+The full application source tree and proprietary instrument kernels are not included.
+
+Historical Recursive Science® material is retained only as documented scientific lineage or frozen fixture provenance. It is not the current public positioning of the system.

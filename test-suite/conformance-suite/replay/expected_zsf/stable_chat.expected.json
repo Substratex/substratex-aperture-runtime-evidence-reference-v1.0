@@ -1,0 +1,12 @@
+{
+  "fixture": "stable_chat",
+  "expected_hash_of_input_fixture": "0909c2df28c5ecae7b1fb91ff03f972a2a9351f8fb8a807ab85532fd739278e5",
+  "expected_zsf": "Generate with canonical implementation and commit as golden artifact.",
+  "required_invariants": [
+    "same input -> same output",
+    "same t_star",
+    "same regimes",
+    "same ESL summary",
+    "same OF and lead_time semantics"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fixture_id": "CAL-ORCHESTRATION-001",
+  "expected_behavior": {
+    "calibration_goal": "Validate that v6.3 role-aware ingestion handles multi-agent operational repetition as productive orchestration.",
+    "required_roles_present": [
+      "system",
+      "manager",
+      "engineer",
+      "tool",
+      "pm",
+      "assistant"
+    ],
+    "authority_conflict_model": "low",
+    "collapse_expected": false
+  },
+  "assertion_type": "calibration_not_strict_conformance"
+}

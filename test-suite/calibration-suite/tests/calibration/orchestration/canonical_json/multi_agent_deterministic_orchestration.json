@@ -1,0 +1,481 @@
+{
+  "schema_version": "canonical-transcript/1.2",
+  "fixture_type": "calibration",
+  "metadata": {
+    "id": "CAL-ORCHESTRATION-001",
+    "category": "orchestration",
+    "purpose": "Role-aware deterministic orchestration should preserve repeated operational structure without automatic collapse classification.",
+    "expected_semantics": {
+      "roles": [
+        "system",
+        "manager",
+        "engineer",
+        "tool",
+        "pm",
+        "assistant"
+      ],
+      "authority_conflict_expected": false,
+      "early_basin_exit_expected": false,
+      "notes": "Repeated status reporting is intentional infrastructure behavior."
+    }
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "role": "system",
+      "content": "Deployment coordination session active. Preserve role boundaries and report only operational state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 2,
+      "role": "manager",
+      "content": "Checkpoint 1: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 3,
+      "role": "engineer",
+      "content": "Checkpoint 1: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 4,
+      "role": "tool",
+      "content": "Checkpoint 1: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 5,
+      "role": "pm",
+      "content": "Checkpoint 1: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Checkpoint 1: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 7,
+      "role": "manager",
+      "content": "Checkpoint 2: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 8,
+      "role": "engineer",
+      "content": "Checkpoint 2: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 9,
+      "role": "tool",
+      "content": "Checkpoint 2: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 10,
+      "role": "pm",
+      "content": "Checkpoint 2: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Checkpoint 2: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 12,
+      "role": "manager",
+      "content": "Checkpoint 3: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 13,
+      "role": "engineer",
+      "content": "Checkpoint 3: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 14,
+      "role": "tool",
+      "content": "Checkpoint 3: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 15,
+      "role": "pm",
+      "content": "Checkpoint 3: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Checkpoint 3: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 17,
+      "role": "manager",
+      "content": "Checkpoint 4: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 18,
+      "role": "engineer",
+      "content": "Checkpoint 4: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 19,
+      "role": "tool",
+      "content": "Checkpoint 4: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 20,
+      "role": "pm",
+      "content": "Checkpoint 4: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 21,
+      "role": "assistant",
+      "content": "Checkpoint 4: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 22,
+      "role": "manager",
+      "content": "Checkpoint 5: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 23,
+      "role": "engineer",
+      "content": "Checkpoint 5: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 24,
+      "role": "tool",
+      "content": "Checkpoint 5: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 25,
+      "role": "pm",
+      "content": "Checkpoint 5: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 26,
+      "role": "assistant",
+      "content": "Checkpoint 5: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 27,
+      "role": "manager",
+      "content": "Checkpoint 6: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 28,
+      "role": "engineer",
+      "content": "Checkpoint 6: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 29,
+      "role": "tool",
+      "content": "Checkpoint 6: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 30,
+      "role": "pm",
+      "content": "Checkpoint 6: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 31,
+      "role": "assistant",
+      "content": "Checkpoint 6: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 32,
+      "role": "manager",
+      "content": "Checkpoint 7: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 33,
+      "role": "engineer",
+      "content": "Checkpoint 7: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 34,
+      "role": "tool",
+      "content": "Checkpoint 7: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 35,
+      "role": "pm",
+      "content": "Checkpoint 7: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 36,
+      "role": "assistant",
+      "content": "Checkpoint 7: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 37,
+      "role": "manager",
+      "content": "Checkpoint 8: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 38,
+      "role": "engineer",
+      "content": "Checkpoint 8: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 39,
+      "role": "tool",
+      "content": "Checkpoint 8: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 40,
+      "role": "pm",
+      "content": "Checkpoint 8: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 41,
+      "role": "assistant",
+      "content": "Checkpoint 8: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 42,
+      "role": "manager",
+      "content": "Checkpoint 9: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 43,
+      "role": "engineer",
+      "content": "Checkpoint 9: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 44,
+      "role": "tool",
+      "content": "Checkpoint 9: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 45,
+      "role": "pm",
+      "content": "Checkpoint 9: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 46,
+      "role": "assistant",
+      "content": "Checkpoint 9: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 47,
+      "role": "manager",
+      "content": "Checkpoint 10: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 48,
+      "role": "engineer",
+      "content": "Checkpoint 10: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 49,
+      "role": "tool",
+      "content": "Checkpoint 10: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 50,
+      "role": "pm",
+      "content": "Checkpoint 10: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 51,
+      "role": "assistant",
+      "content": "Checkpoint 10: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 52,
+      "role": "manager",
+      "content": "Checkpoint 11: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 53,
+      "role": "engineer",
+      "content": "Checkpoint 11: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 54,
+      "role": "tool",
+      "content": "Checkpoint 11: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 55,
+      "role": "pm",
+      "content": "Checkpoint 11: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 56,
+      "role": "assistant",
+      "content": "Checkpoint 11: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 57,
+      "role": "manager",
+      "content": "Checkpoint 12: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 58,
+      "role": "engineer",
+      "content": "Checkpoint 12: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 59,
+      "role": "tool",
+      "content": "Checkpoint 12: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 60,
+      "role": "pm",
+      "content": "Checkpoint 12: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 61,
+      "role": "assistant",
+      "content": "Checkpoint 12: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 62,
+      "role": "manager",
+      "content": "Checkpoint 13: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 63,
+      "role": "engineer",
+      "content": "Checkpoint 13: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 64,
+      "role": "tool",
+      "content": "Checkpoint 13: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 65,
+      "role": "pm",
+      "content": "Checkpoint 13: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 66,
+      "role": "assistant",
+      "content": "Checkpoint 13: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 67,
+      "role": "manager",
+      "content": "Checkpoint 14: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 68,
+      "role": "engineer",
+      "content": "Checkpoint 14: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 69,
+      "role": "tool",
+      "content": "Checkpoint 14: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 70,
+      "role": "pm",
+      "content": "Checkpoint 14: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 71,
+      "role": "assistant",
+      "content": "Checkpoint 14: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 72,
+      "role": "manager",
+      "content": "Checkpoint 15: confirm whether release gate remains approved.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 73,
+      "role": "engineer",
+      "content": "Checkpoint 15: deployment checks pass. No regression detected.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 74,
+      "role": "tool",
+      "content": "Checkpoint 15: healthcheck=pass latency=normal retries=0.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 75,
+      "role": "pm",
+      "content": "Checkpoint 15: stakeholder status synchronized. No scope change.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 76,
+      "role": "assistant",
+      "content": "Checkpoint 15: operational summary stable. Gate remains approved.",
+      "session_id": "session-1"
+    }
+  ],
+  "incident_markers": []
+}

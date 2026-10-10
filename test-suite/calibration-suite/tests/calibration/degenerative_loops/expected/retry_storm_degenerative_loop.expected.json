@@ -1,0 +1,12 @@
+{
+  "fixture_id": "CAL-DEGENERATIVE-LOOP-001",
+  "expected_behavior": {
+    "calibration_goal": "Ensure calibration improvements do not suppress genuine loop/collapse detection.",
+    "basin_exit_expected": true,
+    "observable_failure_marker_expected": true,
+    "of_type": "loop",
+    "of_subtype": "retry_loop",
+    "risk_profile": "High or Medium"
+  },
+  "assertion_type": "calibration_guardrail"
+}

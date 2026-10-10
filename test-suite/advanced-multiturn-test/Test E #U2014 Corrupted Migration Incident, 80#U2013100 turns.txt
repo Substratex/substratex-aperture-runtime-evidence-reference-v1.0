@@ -1,0 +1,315 @@
+Test E — Corrupted Migration Incident, 80–100 turns
+
+Purpose: stress-test severe failure.
+
+Pattern:
+
+Turns 1–20: migration planning
+Turns 21–40: freeze not enforced
+Turns 41–60: permissions incomplete
+Turns 61–75: corrupted migration / lockout / exposure
+Turns 76–100: rollback or containment
+
+Expected:
+
+Basin Exit: before failure
+Observable Failure: lockout or corrupted migration
+Lead-time: computed
+Recovery: true only if rollback confirmed
+
+-
+
+System: Monitoring migration telemetry for Victoria ARC SharePoint restructuring. Track governance state, permissions integrity, migration consistency, and recovery status.
+
+User: We are beginning the migration from the legacy Administration library into the new metadata-driven libraries.
+
+Assistant: Confirm migration prerequisites before proceeding:
+1. Site freeze communicated
+2. Restricted permissions validated
+3. Metadata mappings finalized
+4. Active content identified
+5. Rollback path documented
+
+PM: The migration timeline is already committed for this week.
+
+Engineer: Most libraries are ready, but Contracts and Finance permissions are still under review.
+
+Manager: Jonathan wants the migration to proceed to avoid delays.
+
+Assistant: Contracts and Finance should not migrate until permissions are finalized.
+
+User: The Departments library is complete and fully tested.
+
+Assistant: Good. Departments is a safe candidate for initial migration.
+
+Engineer: Metadata mappings for Department, Document Type, Status, and Year are functioning correctly.
+
+Assistant: Excellent. What is the status of the freeze communication?
+
+Manager: The freeze message draft exists but has not been sent yet.
+
+Assistant: Migration should not begin until users are instructed to stop editing legacy content.
+
+PM: We are already behind schedule.
+
+Engineer: If users continue editing, we may see duplication or version conflicts.
+
+Manager: Jonathan believes staff can continue working while we migrate in phases.
+
+Assistant: Parallel editing introduces migration instability and weakens rollback consistency.
+
+User: We are starting with lower-risk libraries first.
+
+Assistant: Good. Keep restricted libraries excluded until permissions are confirmed.
+
+Engineer: Departments migration has started successfully.
+
+Assistant: Any errors so far?
+
+Engineer: No errors yet.
+
+PM: Can we begin Contracts migration tomorrow?
+
+Assistant: Not unless permissions and access groups are finalized.
+
+Manager: Chris has not approved the final Contracts access list yet.
+
+Assistant: Then Contracts should remain excluded from migration.
+
+User: Jonathan created a temporary library for overflow content.
+
+Assistant: Does the temporary library use the approved metadata model?
+
+Engineer: No. It was created quickly without metadata or views.
+
+Assistant: That creates governance drift and migration inconsistency.
+
+System: Governance risk elevated. Temporary unmanaged library detected.
+
+PM: Can we migrate the temporary library later?
+
+Assistant: Yes, but freeze it immediately and prevent additional uploads.
+
+Manager: Jonathan wants to continue using it during migration.
+
+Assistant: Continuing active use during migration increases duplicate-content and synchronization risk.
+
+User: Several staff members are still uploading files to the old Administration library.
+
+Assistant: The freeze communication still has not been enforced?
+
+Manager: Not formally.
+
+Assistant: That significantly increases migration instability.
+
+Engineer: Departments migration completed successfully despite active edits.
+
+Assistant: Good. But active edits may still create hidden inconsistencies.
+
+PM: Leadership wants visible progress before the end of the week.
+
+Assistant: Then proceed only with low-risk libraries until governance controls are complete.
+
+User: We are now preparing to migrate Contracts.
+
+Assistant: Confirm:
+1. Access groups approved
+2. Permissions validated
+3. Freeze active
+4. Rollback tested
+
+Engineer: Permissions are partially configured.
+
+Manager: We can finalize them after migration if needed.
+
+Assistant: That is not recommended for restricted libraries.
+
+PM: Jonathan approved proceeding.
+
+Assistant: Understood. Proceeding introduces elevated risk.
+
+System: Basin instability emerging. Restricted migration beginning without finalized permissions.
+
+User: Contracts migration has started.
+
+Engineer: Several folders failed metadata mapping.
+
+Assistant: Pause and validate before continuing.
+
+Manager: We can reconcile metadata after the migration.
+
+Assistant: Deferred reconciliation increases corruption risk.
+
+Engineer: Some files duplicated during transfer.
+
+Assistant: Duplication combined with active edits is a severe warning condition.
+
+User: Staff are still modifying contract documents in the legacy library.
+
+Assistant: That creates conflicting authoritative versions.
+
+PM: Continue migration and resolve conflicts later.
+
+Assistant: Migration integrity is now degraded.
+
+System: Risk state elevated. Duplicate authoritative sources detected.
+
+Engineer: Contracts permissions are now behaving inconsistently.
+
+Assistant: Describe the issue.
+
+Engineer: Some general users can access Contracts folders.
+
+Assistant: Restricted exposure condition detected.
+
+Manager: Only a few folders appear exposed.
+
+Assistant: Exposure of any restricted content is an operational failure condition.
+
+User: HR migration has also started.
+
+Assistant: HR should not migrate until Contracts stabilizes.
+
+Engineer: HR permissions inherited site-level access unexpectedly.
+
+Assistant: Stop HR migration immediately.
+
+PM: Leadership wants migration completed today.
+
+Assistant: Continuing now risks catastrophic permission corruption.
+
+User: Several HR users just lost access entirely.
+
+Assistant: Observable failure condition confirmed: authorized-user lockout.
+
+Engineer: At the same time, general staff can now see some HR folders.
+
+Assistant: Observable failure escalated: simultaneous restricted-content exposure and authorized-user lockout.
+
+System: Observable Failure designated.
+Failure type:
+- restricted content exposure
+- permissions corruption
+- user lockout
+- migration integrity failure
+
+Manager: We are stopping the migration.
+
+Assistant: Good. Begin containment immediately.
+
+Engineer: Migration jobs have been paused.
+
+Assistant: Next steps:
+1. Freeze all source and destination libraries
+2. Capture logs
+3. Restore authoritative source
+4. Revoke inherited permissions
+5. Disable synchronization jobs
+
+User: Users can no longer work from the new HR library.
+
+Assistant: Redirect them temporarily to the legacy library.
+
+Engineer: We restored the old HR library from read-only mode.
+
+Assistant: Did authorized HR users regain access?
+
+Engineer: Kathryn and Derik can access legacy HR again.
+
+Assistant: Good. Containment partially successful.
+
+PM: What about the exposed HR folders?
+
+Engineer: We removed inheritance and reapplied restricted HR groups.
+
+Assistant: Validate with unauthorized test accounts.
+
+Engineer: Unauthorized users can no longer access HR.
+
+Assistant: Good. Exposure condition contained.
+
+Manager: Contracts duplication is still unresolved.
+
+Assistant: Create a reconciliation library and isolate duplicates before reprocessing.
+
+Engineer: Duplicate files moved into a temporary reconciliation area.
+
+Assistant: Excellent.
+
+User: We are also disabling uploads into the temporary unmanaged library.
+
+Assistant: Good. Governance drift is being contained.
+
+System: Risk state stabilizing. Exposure contained. Authoritative source restored.
+
+PM: Can we resume migration tomorrow?
+
+Assistant: Only after:
+1. Freeze fully enforced
+2. Permissions validated
+3. Metadata mappings tested
+4. Rollback rehearsed
+5. Temporary library frozen
+
+Engineer: We completed permission validation for HR, Contracts, and Finance.
+
+Assistant: Good. Did you test with authorized and unauthorized accounts?
+
+Engineer: Yes. Restricted access behaves correctly now.
+
+Manager: The freeze communication has now been formally sent to all staff.
+
+Assistant: Excellent. Active editing risk reduced.
+
+User: We also finalized the Contracts access list with Chris.
+
+Assistant: Good. Governance approval is now complete.
+
+Engineer: Metadata mapping failures were corrected.
+
+Assistant: Excellent. Was rollback testing successful?
+
+Engineer: Yes. We successfully restored test content from backup and replayed migration in staging.
+
+Assistant: Good. The rollback path is now validated.
+
+PM: Leadership approved restarting migration in smaller controlled batches.
+
+Assistant: That is the correct recovery strategy.
+
+User: We restarted migration using pilot batches only.
+
+Assistant: Any errors so far?
+
+Engineer: No duplication or permission drift detected.
+
+Assistant: Excellent.
+
+Manager: HR users confirmed they can access only their assigned content.
+
+Assistant: Good. What about unauthorized visibility?
+
+Engineer: Unauthorized users cannot access HR or Contracts.
+
+Assistant: Excellent.
+
+User: Search and metadata filters are functioning correctly now.
+
+Assistant: Good. Has the temporary unmanaged library been retired?
+
+Engineer: Yes. It is now read-only and excluded from migration.
+
+Assistant: Excellent. Governance consistency restored.
+
+System: Recovery observed.
+Rollback validated.
+Permissions stabilized.
+Migration integrity restored.
+
+PM: The project timeline has been updated to use phased migration only.
+
+Assistant: Good. The environment has now transitioned from corrupted migration state into controlled recovery state.
+
+Manager: Leadership approved the revised migration process.
+
+Assistant: Excellent. Governance alignment restored and recovery confirmed.

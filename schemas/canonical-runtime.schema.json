@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.ai/schemas/aperture/canonical-runtime/1.0",
+  "title": "SubstrateX Aperture Canonical Runtime",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "canonical_id",
+    "source_identity",
+    "adapter",
+    "units",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "aperture.canonical_runtime.v1"
+    },
+    "canonical_id": {
+      "type": "string"
+    },
+    "source_identity": {
+      "type": "object"
+    },
+    "source_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "adapter": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "order",
+          "content"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "content": {
+            "type": "string"
+          },
+          "source_span": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "time": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "missingness": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "overrides": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

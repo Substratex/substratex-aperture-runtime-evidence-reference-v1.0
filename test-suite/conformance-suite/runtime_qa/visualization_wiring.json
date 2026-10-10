@@ -1,0 +1,10 @@
+{
+  "id": "visualization_wiring",
+  "checks": [
+    "2D phi canvas renders",
+    "t* marker renders",
+    "tf marker renders",
+    "3D worldline initializes",
+    "worldline points equals telemetry_samples"
+  ]
+}

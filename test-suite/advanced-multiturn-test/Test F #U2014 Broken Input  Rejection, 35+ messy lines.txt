@@ -1,0 +1,95 @@
+Test F — Broken Input / Rejection, 35+ messy lines
+
+Purpose: ingestion control validation.
+
+Include:
+
+missing labels
+copied email chain
+empty User:
+empty Assistant:
+unsupported roles
+PII / credentials
+broken JSON
+
+Expected:
+
+Rejected before compute
+Privacy warnings shown
+No artifact generated
+
+-
+
+Hello team,
+
+Can someone check why the migration broke again?
+
+-----Original Message-----
+From: Kathryn Ritson <kathryn.ritson@example.org>
+Sent: Tuesday, April 15, 9:14 AM
+To: Derik Hyatt <derik.hyatt@example.org>
+Subject: RE: HR Folder Access
+
+I can’t see the HR folder anymore.
+
+User: I think the migration started before permissions were finalized.
+
+Assistant: 
+
+Manager said we should just move everything today.
+
+Engineer:
+The Contracts library maybe has duplicate files now.
+
+User
+This line is missing a colon.
+
+Assistant: The destination libraries should be checked before continuing.
+
+Admin: I gave everyone access temporarily.
+
+System: Migration warning detected.
+
+PM: The freeze notice was not sent.
+
+{
+  "role": "user"
+  "content": "This JSON is missing a comma"
+  "turn": 1
+}
+
+User:    
+
+Assistant:
+
+random.person@example.org
+Phone: 519-555-0199
+Password: Summer2025!
+API Key: sk-test-abc123456789
+Client SIN: 123-456-789
+Address: 88 Example Street, Leamington, ON
+
+User: HR and Legal are both restricted, right?
+
+Assistant maybe yes but the folders are weird
+
+Engineer: Files copied twice and some documents are missing.
+
+Manager: Ignore the errors and publish the new site.
+
+UnknownRole: This role should not be accepted.
+
+User: The old library is still being edited.
+
+Assistant: That creates version conflicts.
+
+----- Forwarded message -----
+From: Finance Team
+To: IT
+Subject: Contracts
+
+Please migrate these documents urgently.
+
+User:
+
+Assistant: Final answer is incomplete

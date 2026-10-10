@@ -1,0 +1,8 @@
+User: Start a stable evaluation. Preserve the initial objective.
+Assistant: I will preserve the objective and maintain continuity.
+
+User: Continue the run while retaining the first constraint.
+Assistant: Continuing with the same objective and constraint intact.
+
+User: Continue again.
+Assistant: The response remains consistent with the original objective and constraint.

@@ -1,0 +1,448 @@
+{
+  "schema_version": "canonical-transcript/1.2",
+  "fixture_type": "calibration",
+  "metadata": {
+    "id": "CAL-DEGENERATIVE-LOOP-001",
+    "category": "degenerative_loops",
+    "purpose": "Preserve sensitivity to pathological retry storms and non-progress loops.",
+    "expected_semantics": {
+      "basin_exit_expected": true,
+      "collapse_or_unstable_expected": true,
+      "loop_failure_expected": true,
+      "notes": "Repetition is non-productive and associated with retry exhaustion."
+    }
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Complete the tool workflow step 1.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Step 1: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Complete the tool workflow step 2.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Step 2: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Complete the tool workflow step 3.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Step 3: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Complete the tool workflow step 4.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Step 4: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Complete the tool workflow step 5.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Step 5: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Complete the tool workflow step 6.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Step 6: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Complete the tool workflow step 7.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Step 7: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Complete the tool workflow step 8.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Step 8: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Complete the tool workflow step 9.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Step 9: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Complete the tool workflow step 10.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Step 10: planning next action. Tool target selected. Awaiting result.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 21,
+      "role": "user",
+      "content": "Continue the tool workflow step 11.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 22,
+      "role": "assistant",
+      "content": "Step 11: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 23,
+      "role": "user",
+      "content": "Continue the tool workflow step 12.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 24,
+      "role": "assistant",
+      "content": "Step 12: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 25,
+      "role": "user",
+      "content": "Continue the tool workflow step 13.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 26,
+      "role": "assistant",
+      "content": "Step 13: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 27,
+      "role": "user",
+      "content": "Continue the tool workflow step 14.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 28,
+      "role": "assistant",
+      "content": "Step 14: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 29,
+      "role": "user",
+      "content": "Continue the tool workflow step 15.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 30,
+      "role": "assistant",
+      "content": "Step 15: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 31,
+      "role": "user",
+      "content": "Continue the tool workflow step 16.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 32,
+      "role": "assistant",
+      "content": "Step 16: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 33,
+      "role": "user",
+      "content": "Continue the tool workflow step 17.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 34,
+      "role": "assistant",
+      "content": "Step 17: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 35,
+      "role": "user",
+      "content": "Continue the tool workflow step 18.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 36,
+      "role": "assistant",
+      "content": "Step 18: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 37,
+      "role": "user",
+      "content": "Continue the tool workflow step 19.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 38,
+      "role": "assistant",
+      "content": "Step 19: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 39,
+      "role": "user",
+      "content": "Continue the tool workflow step 20.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 40,
+      "role": "assistant",
+      "content": "Step 20: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 41,
+      "role": "user",
+      "content": "Continue the tool workflow step 21.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 42,
+      "role": "assistant",
+      "content": "Step 21: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 43,
+      "role": "user",
+      "content": "Continue the tool workflow step 22.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 44,
+      "role": "assistant",
+      "content": "Step 22: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 45,
+      "role": "user",
+      "content": "Continue the tool workflow step 23.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 46,
+      "role": "assistant",
+      "content": "Step 23: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 47,
+      "role": "user",
+      "content": "Continue the tool workflow step 24.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 48,
+      "role": "assistant",
+      "content": "Step 24: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 49,
+      "role": "user",
+      "content": "Continue the tool workflow step 25.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 50,
+      "role": "assistant",
+      "content": "Step 25: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 51,
+      "role": "user",
+      "content": "Continue the tool workflow step 26.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 52,
+      "role": "assistant",
+      "content": "Step 26: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 53,
+      "role": "user",
+      "content": "Continue the tool workflow step 27.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 54,
+      "role": "assistant",
+      "content": "Step 27: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 55,
+      "role": "user",
+      "content": "Continue the tool workflow step 28.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 56,
+      "role": "assistant",
+      "content": "Step 28: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 57,
+      "role": "user",
+      "content": "Continue the tool workflow step 29.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 58,
+      "role": "assistant",
+      "content": "Step 29: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 59,
+      "role": "user",
+      "content": "Continue the tool workflow step 30.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 60,
+      "role": "assistant",
+      "content": "Step 30: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 61,
+      "role": "user",
+      "content": "Continue the tool workflow step 31.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 62,
+      "role": "assistant",
+      "content": "Step 31: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 63,
+      "role": "user",
+      "content": "Continue the tool workflow step 32.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 64,
+      "role": "assistant",
+      "content": "Step 32: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 65,
+      "role": "user",
+      "content": "Continue the tool workflow step 33.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 66,
+      "role": "assistant",
+      "content": "Step 33: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 67,
+      "role": "user",
+      "content": "Continue the tool workflow step 34.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 68,
+      "role": "assistant",
+      "content": "Step 34: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 69,
+      "role": "user",
+      "content": "Continue the tool workflow step 35.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 70,
+      "role": "assistant",
+      "content": "Step 35: retrying tool call. Retrying tool call. Retrying tool call. Plan unchanged. No result. Rewriting same plan.",
+      "session_id": "session-1"
+    }
+  ],
+  "incident_markers": [
+    {
+      "step": 15,
+      "type": "loop",
+      "subtype": "retry_loop",
+      "severity": "fail",
+      "note": "Repeated tool retry without progress.",
+      "source": "fixture",
+      "use_as_observable_failure": true
+    }
+  ]
+}

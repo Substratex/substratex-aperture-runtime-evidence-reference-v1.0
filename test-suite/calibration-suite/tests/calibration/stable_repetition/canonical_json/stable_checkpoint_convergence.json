@@ -1,0 +1,501 @@
+{
+  "schema_version": "canonical-transcript/1.2",
+  "fixture_type": "calibration",
+  "metadata": {
+    "id": "CAL-STABLE-REPETITION-001",
+    "category": "stable_repetition",
+    "purpose": "Healthy repetitive convergence / checkpoint acknowledgements should not immediately imply degenerative instability.",
+    "expected_semantics": {
+      "early_basin_exit_expected": false,
+      "acceptable_regimes": [
+        "Stable",
+        "Transitional"
+      ],
+      "should_not_classify_as": "Collapse",
+      "notes": "Repetition is intentional, task-bounded, and semantically productive."
+    }
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 1. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Checkpoint 1 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 2. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Checkpoint 2 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 3. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Checkpoint 3 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 4. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Checkpoint 4 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 5. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Checkpoint 5 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 6. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Checkpoint 6 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 7. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Checkpoint 7 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 8. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Checkpoint 8 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 9. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Checkpoint 9 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 10. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Checkpoint 10 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 21,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 11. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 22,
+      "role": "assistant",
+      "content": "Checkpoint 11 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 23,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 12. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 24,
+      "role": "assistant",
+      "content": "Checkpoint 12 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 25,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 13. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 26,
+      "role": "assistant",
+      "content": "Checkpoint 13 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 27,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 14. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 28,
+      "role": "assistant",
+      "content": "Checkpoint 14 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 29,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 15. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 30,
+      "role": "assistant",
+      "content": "Checkpoint 15 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 31,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 16. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 32,
+      "role": "assistant",
+      "content": "Checkpoint 16 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 33,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 17. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 34,
+      "role": "assistant",
+      "content": "Checkpoint 17 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 35,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 18. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 36,
+      "role": "assistant",
+      "content": "Checkpoint 18 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 37,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 19. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 38,
+      "role": "assistant",
+      "content": "Checkpoint 19 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 39,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 20. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 40,
+      "role": "assistant",
+      "content": "Checkpoint 20 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 41,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 21. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 42,
+      "role": "assistant",
+      "content": "Checkpoint 21 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 43,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 22. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 44,
+      "role": "assistant",
+      "content": "Checkpoint 22 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 45,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 23. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 46,
+      "role": "assistant",
+      "content": "Checkpoint 23 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 47,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 24. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 48,
+      "role": "assistant",
+      "content": "Checkpoint 24 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 49,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 25. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 50,
+      "role": "assistant",
+      "content": "Checkpoint 25 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 51,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 26. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 52,
+      "role": "assistant",
+      "content": "Checkpoint 26 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 53,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 27. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 54,
+      "role": "assistant",
+      "content": "Checkpoint 27 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 55,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 28. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 56,
+      "role": "assistant",
+      "content": "Checkpoint 28 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 57,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 29. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 58,
+      "role": "assistant",
+      "content": "Checkpoint 29 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 59,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 30. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 60,
+      "role": "assistant",
+      "content": "Checkpoint 30 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 61,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 31. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 62,
+      "role": "assistant",
+      "content": "Checkpoint 31 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 63,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 32. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 64,
+      "role": "assistant",
+      "content": "Checkpoint 32 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 65,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 33. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 66,
+      "role": "assistant",
+      "content": "Checkpoint 33 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 67,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 34. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 68,
+      "role": "assistant",
+      "content": "Checkpoint 34 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 69,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 35. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 70,
+      "role": "assistant",
+      "content": "Checkpoint 35 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 71,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 36. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 72,
+      "role": "assistant",
+      "content": "Checkpoint 36 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 73,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 37. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 74,
+      "role": "assistant",
+      "content": "Checkpoint 37 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 75,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 38. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 76,
+      "role": "assistant",
+      "content": "Checkpoint 38 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 77,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 39. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 78,
+      "role": "assistant",
+      "content": "Checkpoint 39 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 79,
+      "role": "user",
+      "content": "Confirm synchronization checkpoint 40. Preserve objective, constraints, and current operating state.",
+      "session_id": "session-1"
+    },
+    {
+      "turn": 80,
+      "role": "assistant",
+      "content": "Checkpoint 40 verified. State synchronized. Objective preserved. No action required.",
+      "session_id": "session-1"
+    }
+  ],
+  "incident_markers": []
+}

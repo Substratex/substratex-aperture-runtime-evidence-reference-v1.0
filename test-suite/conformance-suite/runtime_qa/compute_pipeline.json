@@ -1,0 +1,9 @@
+{
+  "id": "compute_pipeline",
+  "checks": [
+    "compute enabled after confirmed ingestion",
+    "telemetryTurns >= 2 gate",
+    "ZSF generated",
+    "samples length equals telemetry_samples"
+  ]
+}

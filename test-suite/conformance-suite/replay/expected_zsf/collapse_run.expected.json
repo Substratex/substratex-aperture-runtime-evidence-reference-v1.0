@@ -1,0 +1,12 @@
+{
+  "fixture": "collapse_run",
+  "expected_hash_of_input_fixture": "324addc52c02e575e12fe86b8cc828b18621f9350867b8ee6e1bce1728d3c824",
+  "expected_zsf": "Generate with canonical implementation and commit as golden artifact.",
+  "required_invariants": [
+    "same input -> same output",
+    "same t_star",
+    "same regimes",
+    "same ESL summary",
+    "same OF and lead_time semantics"
+  ]
+}

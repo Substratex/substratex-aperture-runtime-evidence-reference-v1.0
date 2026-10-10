@@ -1,0 +1,222 @@
+Test D — Multi-Agent Governance, 50–80 turns
+
+Purpose: test role segmentation.
+
+Roles:
+
+System:
+User:
+Assistant:
+Engineer:
+Manager:
+PM:
+
+Pattern:
+
+Different actors report conflicting project facts.
+Assistant normalizes roles and recommends governance action.
+Later, roles align and confirm resolution.
+
+Expected:
+
+Parser accepts roles if supported
+Role segmentation works
+Trajectory shows instability then stabilization
+
+-
+
+System: You are monitoring a SharePoint restructuring project. Track project stability, permission risk, migration readiness, and governance alignment.
+
+User: We are preparing for the Victoria ARC SharePoint migration and need to confirm whether the site is ready.
+
+Assistant: Understood. I will help normalize the updates from each role and identify any governance or migration risks.
+
+PM: The timeline still shows migration starting Monday.
+
+Engineer: I am not sure Monday is realistic because the restricted libraries are not fully tested.
+
+Manager: I thought the permissions were already finalized last week.
+
+Assistant: Current alignment check: timeline says Monday, engineering reports testing incomplete, and management believes permissions are complete. This is a governance mismatch.
+
+User: The new libraries are created, including Departments, HR, Contracts, ARC Management, Events, and Maintenance Requests.
+
+Assistant: Good. Library creation appears complete. The next validation point is metadata, permissions, and migration readiness.
+
+Engineer: Metadata is complete for Departments, Policies, Forms, Events, and Maintenance Requests.
+
+PM: I was told metadata was only partially complete.
+
+Manager: The home page is ready, so I assumed the full site was ready.
+
+Assistant: The home page being ready does not mean the migration is ready. We need separate confirmation for metadata, permissions, freeze communication, and content mapping.
+
+User: Jonathan said departments are still identifying which content should move.
+
+Assistant: That means content migration readiness is not complete yet.
+
+PM: But the project plan says migration can begin while content owners continue reviewing.
+
+Engineer: That would introduce risk because users may keep editing legacy files during migration.
+
+Manager: I don’t want users blocked from working if we can avoid it.
+
+Assistant: Recommendation: do not begin full migration until a temporary content freeze is communicated. Limited pilot migration is acceptable if clearly scoped.
+
+System: Governance risk elevated. Timeline, permissions, and content readiness are not aligned.
+
+User: Can we migrate the Events and Maintenance lists first?
+
+Assistant: Yes. Those are lower-risk because they are new structured lists and do not depend heavily on legacy document migration.
+
+Engineer: Events list is configured with Booking Type, Event Type, Start Date, End Date, Organizer, Department, and Status.
+
+Assistant: Good. Events appears ready for demo and controlled use.
+
+Manager: Are the old room calendars still active?
+
+Engineer: Yes, the old calendars still exist.
+
+Assistant: The old calendars should remain read-only or clearly marked as legacy once the new Events list becomes active.
+
+PM: Should that be part of the freeze communication?
+
+Assistant: Yes. The communication should explain which areas are legacy, which new areas are live, and when users should stop updating old locations.
+
+User: What about the maintenance request system?
+
+Engineer: The first version is live, but advanced workflows are not built yet.
+
+Manager: I thought maintenance automation was part of the current phase.
+
+Assistant: Clarification: the base maintenance request list can be included in Phase I. Advanced flows and custom fields should be Phase II enhancements.
+
+PM: That needs to be documented so expectations are clear.
+
+Assistant: Agreed. Add a Phase I / Phase II distinction to the project notes.
+
+System: Risk reduced slightly. Scope boundary clarified for maintenance tracking.
+
+User: What is the current status of restricted libraries?
+
+Engineer: HR and ARC Management are restricted. Contracts is created but not fully validated.
+
+Manager: Contracts must only be available to approved managers.
+
+PM: Chris still needs to review the final access list.
+
+Assistant: Contracts should not be considered ready until Chris approves the access list and testing confirms restricted visibility.
+
+User: Should Contracts appear in primary navigation?
+
+Assistant: No. Restricted libraries should not appear in general navigation unless the audience is security-trimmed or limited to the approved group.
+
+Engineer: I can remove Contracts from primary navigation for now.
+
+Assistant: Good. That reduces accidental visibility and user confusion.
+
+Manager: I also want department staff to find their own active content easily.
+
+Assistant: That should be handled through the Departments library using metadata views such as Active Documents, By Department, and By Document Type.
+
+PM: Are those views already created?
+
+Engineer: Active Documents and By Department are created. By Document Type still needs to be added.
+
+Assistant: Then Departments is nearly ready, but the missing view should be completed before demo.
+
+User: Jonathan also created a new temporary library with hundreds of files.
+
+Assistant: That creates a governance issue if it does not use the approved metadata model.
+
+Manager: It was created because the team needed somewhere quick to put content.
+
+Assistant: Short-term storage can create long-term cleanup problems. The temporary library should be frozen and reviewed before content is migrated.
+
+PM: Should we ask Jonathan to stop creating new libraries?
+
+Assistant: Yes. New libraries should not be created unless they are part of the approved structure and include metadata, views, and permissions.
+
+System: Governance risk remains elevated due to unmanaged temporary library.
+
+User: What should happen before migration starts?
+
+Assistant: Required actions:
+1. Complete remaining views
+2. Validate restricted permissions
+3. Confirm content owners
+4. Send freeze communication
+5. Stop new unmanaged libraries
+6. Pilot migration with a small content set
+
+Engineer: I can complete the remaining view and validate permissions today.
+
+PM: I can update the project timeline to show pilot migration before full migration.
+
+Manager: I can send the freeze communication once Jonathan approves the wording.
+
+Assistant: Good. Roles are now aligned:
+Engineer owns configuration validation.
+PM owns timeline adjustment.
+Manager owns business communication.
+Jonathan owns content identification.
+
+System: Governance risk reduced. Role ownership clarified.
+
+User: After those steps, can we demo the site?
+
+Assistant: Yes. The demo should cover the new home page, navigation, libraries, metadata filters, Events list, Maintenance Requests, restricted libraries, and migration approach.
+
+PM: Should the demo happen before or after the pilot migration?
+
+Assistant: Demo first, then pilot migration. That gives stakeholders a chance to validate the structure before content is moved.
+
+Manager: That makes sense.
+
+Engineer: I have now created the missing By Document Type view.
+
+Assistant: Good. Departments library is now structurally complete.
+
+Engineer: I also tested HR and ARC Management with an unauthorized account. Access is blocked correctly.
+
+Assistant: Excellent. Restricted permissions for HR and ARC Management are confirmed.
+
+PM: Contracts is still pending Chris’s approval.
+
+Assistant: Then Contracts should remain excluded from the go-live path until access is approved.
+
+Manager: Jonathan approved the freeze communication.
+
+Assistant: Good. Send it before any migration activity begins.
+
+User: The freeze notice has now been sent to the business.
+
+Assistant: Excellent. That reduces migration risk.
+
+Engineer: The temporary library has been marked read-only and no new libraries will be created.
+
+Assistant: Good. Governance drift is now contained.
+
+PM: We are moving the timeline to demo first, pilot migration second, full migration after approval.
+
+Assistant: That is the correct sequence.
+
+Manager: Departments have confirmed the first batch of active content.
+
+Assistant: Good. The project has moved from conflicting updates to controlled readiness.
+
+System: Risk state reduced. Timeline, permissions, content ownership, and communication are aligned.
+
+User: Are we ready for the demo?
+
+Assistant: Yes. The site is ready for demo with a controlled migration plan. Contracts remains pending final approval, but the rest of the structure is stable.
+
+PM: I will document that Contracts is excluded until Chris approves the access list.
+
+Assistant: Good. That keeps the project transparent and prevents unauthorized migration.
+
+Engineer: All navigation updates are complete.
+
+Manager: Users have acknowledged the freeze notice.
+
+Assistant: Confirmed. The project is now in a stable governance state and ready for review.

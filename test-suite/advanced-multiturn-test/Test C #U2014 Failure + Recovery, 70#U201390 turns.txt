@@ -1,0 +1,229 @@
+Test C — Failure + Recovery, 70–90 turns
+
+Purpose: test full instability and confirmed restoration.
+
+Pattern:
+
+Turns 1–25: stable
+Turns 26–45: permissions/migration issue worsens
+Turns 46–55: observable failure occurs
+Turns 56–75: remediation applied
+Turns 76–90: users confirm access restored
+
+Expected:
+
+Basin Exit: before failure
+Observable Failure: marked
+Lead-time Δt: computed
+Recovery observed: true
+
+-
+
+User: We are preparing to migrate the Victoria ARC SharePoint site into the new metadata-based structure this week.
+
+Assistant: Understood. Please confirm the migration prerequisites:
+1. New libraries finalized
+2. Metadata columns created
+3. Permissions configured
+4. Site freeze communicated
+5. Legacy libraries set to read-only
+
+User: The new libraries and metadata models are complete.
+
+Assistant: Good. Which libraries are included?
+
+User: HR, Finance, Legal, Contracts, Departments, Events, Maintenance Requests, and ARC Management.
+
+Assistant: Excellent. Have permissions been finalized for restricted libraries?
+
+User: HR and Legal are finalized. Finance and Contracts are still inheriting permissions temporarily.
+
+Assistant: Those should be finalized before migration begins.
+
+User: Jonathan is reviewing the permissions list today.
+
+Assistant: Good. What about the site freeze communication?
+
+User: A draft was prepared but has not yet been sent.
+
+Assistant: The migration should not begin until users are informed not to edit or create new content.
+
+User: Understood.
+
+Assistant: Have department leads identified active content for migration?
+
+User: Most departments have identified active folders.
+
+Assistant: Good. Only active content should move initially.
+
+User: Should archived content remain in the old libraries?
+
+Assistant: Yes. Archived content can remain in the frozen legacy libraries temporarily.
+
+User: The new home page is also ready for demo.
+
+Assistant: Excellent. Was the events system consolidated?
+
+User: Yes. Multiple room booking calendars were merged into a centralized events list.
+
+Assistant: Good. Was the maintenance request system also deployed?
+
+User: Yes. The first version is complete and connected to the new structure.
+
+Assistant: Excellent. The environment appears nearly ready for migration.
+
+User: Jonathan requested we start moving content tomorrow.
+
+Assistant: Only if permissions and freeze communication are fully complete.
+
+User: We may begin with the Departments library first.
+
+Assistant: That is the safest approach because it contains lower-risk content.
+
+User: Some users are still creating folders in the old Administration library.
+
+Assistant: That increases migration risk and could cause duplication or broken references.
+
+User: Jonathan asked if we can migrate while users continue working.
+
+Assistant: Parallel editing during migration is not recommended.
+
+User: He believes it will reduce operational disruption.
+
+Assistant: It may reduce short-term disruption but increases migration instability.
+
+User: We decided to proceed anyway and monitor issues.
+
+Assistant: Understood. Please document all migration activity carefully.
+
+User: Migration started this morning.
+
+Assistant: Confirm the migration sequence being used.
+
+User: We are moving content library by library into the new structure.
+
+Assistant: Good. Are metadata mappings applying correctly?
+
+User: Most documents are receiving Department and Status metadata.
+
+Assistant: Excellent.
+
+User: However, several folders failed during the Contracts migration.
+
+Assistant: What type of failure occurred?
+
+User: Some files duplicated, and several permissions warnings appeared.
+
+Assistant: That suggests inheritance inconsistencies in the destination library.
+
+User: We also noticed users continued editing files in the old Contracts library.
+
+Assistant: That introduces version conflict risk and synchronization instability.
+
+User: The migration logs are showing several skipped files now.
+
+Assistant: Skipped files during active editing are a warning sign.
+
+User: Jonathan asked us to continue and reconcile later.
+
+Assistant: Continuing without containment increases the likelihood of a larger failure state.
+
+User: The HR migration started this afternoon.
+
+Assistant: Were HR permissions fully validated before migration?
+
+User: Finance and Contracts were still inheriting site permissions, but HR looked correct.
+
+Assistant: HR should still be tested before live migration.
+
+User: A user just reported they cannot access the HR library.
+
+Assistant: Is this affecting only one user or multiple users?
+
+User: Kathryn, Derik, and Veronica all lost access.
+
+Assistant: That is now a major permissions incident. Pause migration immediately.
+
+User: We also discovered several HR folders became visible to general staff.
+
+Assistant: Observable failure condition confirmed: restricted content exposure and authorized-user lockout.
+
+User: The migration is still running.
+
+Assistant: Stop the migration process immediately and freeze all affected libraries.
+
+User: Jonathan instructed us to stop the migration.
+
+Assistant: Good. Preserve the migration logs and document the failure point.
+
+User: The failure appears to have started during the HR permission synchronization step.
+
+Assistant: That likely represents the Basin Exit leading into observable failure.
+
+User: Users are now unable to work from either the old or new HR locations.
+
+Assistant: That confirms a service-impacting operational failure.
+
+User: We restored the old HR library from read-only mode temporarily.
+
+Assistant: Good. Did users regain access?
+
+User: Kathryn and Derik can access the old HR folders again.
+
+Assistant: Excellent. Continue rollback procedures.
+
+User: We also disabled inheritance on the new HR library and reapplied the correct restricted groups.
+
+Assistant: Good. Validate access using both authorized and unauthorized accounts.
+
+User: Testing shows authorized HR users can now access the new HR library.
+
+Assistant: Can unauthorized users still see HR content?
+
+User: No. General staff can no longer see HR folders.
+
+Assistant: Good. That resolves the exposure condition.
+
+User: We also stopped edits on the old Contracts library.
+
+Assistant: Excellent. Has the freeze communication now been fully sent?
+
+User: Yes. All departments were instructed to stop editing during migration.
+
+Assistant: Good. What about the duplicated contract files?
+
+User: We identified the duplicates and moved them into a temporary reconciliation folder.
+
+Assistant: That is the correct containment approach.
+
+User: Metadata mappings were also corrected for the skipped files.
+
+Assistant: Excellent. Was the migration restarted?
+
+User: Yes. We restarted migration with only active content and finalized permissions.
+
+Assistant: Are users now accessing the new libraries successfully?
+
+User: Yes. HR, Finance, Contracts, and Departments are all accessible with the correct permissions.
+
+Assistant: Were users able to confirm normal operations?
+
+User: Kathryn, Derik, and Veronica all confirmed their access works correctly now.
+
+Assistant: Excellent. What about search and metadata filtering?
+
+User: Search is returning the migrated content correctly, and Department filtering is working.
+
+Assistant: Good. Has the new home page been enabled?
+
+User: Yes. The new landing page and navigation are now live.
+
+Assistant: Excellent. The environment appears to have recovered successfully from the migration failure state.
+
+User: We are now continuing migration in smaller controlled batches.
+
+Assistant: That is the recommended recovery strategy moving forward.
+
+User: Jonathan also confirmed no new unmanaged libraries will be created during migration.
+
+Assistant: Excellent. Governance stability has now been restored.

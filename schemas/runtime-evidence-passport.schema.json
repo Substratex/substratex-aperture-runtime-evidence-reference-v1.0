@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.ai/schemas/aperture/runtime-evidence-passport/1.0",
+  "title": "SubstrateX Aperture Runtime Evidence Passport",
+  "type": "object",
+  "required": [
+    "passport_version",
+    "record_id",
+    "run_id",
+    "canonical_identity",
+    "formation",
+    "integrity",
+    "claim_boundary",
+    "issuance"
+  ],
+  "properties": {
+    "passport_version": {
+      "type": "string"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "source_identity": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "canonical_identity": {
+      "type": "string"
+    },
+    "formation": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    },
+    "claim_boundary": {
+      "type": "object"
+    },
+    "export_authority": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "evidence_seal": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "non_certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preservation": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "issuance": {
+      "type": "object",
+      "required": [
+        "status",
+        "authority"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "authority": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

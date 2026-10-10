@@ -1,0 +1,8 @@
+{
+  "name": "telemetry-adapter-v6.3-calibration-tests",
+  "version": "6.3.0",
+  "description": "Calibration fixture suite for Runtime Cognition Observability and Behavioral Telemetry.",
+  "scripts": {
+    "validate:calibration": "node scripts/validate-calibration-fixtures.js"
+  }
+}

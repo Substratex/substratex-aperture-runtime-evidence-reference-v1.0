@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://substratex.ai/schemas/aperture/runtime-evidence-artifact/1.0",
+  "title": "SubstrateX Aperture Runtime Evidence Artifact",
+  "type": "object",
+  "required": [
+    "artifact_version",
+    "artifact_id",
+    "run_id",
+    "canonical_identity",
+    "passport_imprint",
+    "claim_boundary"
+  ],
+  "properties": {
+    "artifact_version": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "canonical_identity": {
+      "type": "string"
+    },
+    "canonical_history": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "recorder_frames": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "recorder_events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "telemetry": {
+      "type": "object"
+    },
+    "temporal_markers": {
+      "type": "object"
+    },
+    "bounded_findings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "passport_imprint": {
+      "type": "object"
+    },
+    "run_authority": {
+      "type": "object"
+    },
+    "evidence_flow": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "method_references": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "claim_boundary": {
+      "type": "object"
+    },
+    "missingness": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

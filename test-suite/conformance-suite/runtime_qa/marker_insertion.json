@@ -1,0 +1,10 @@
+{
+  "id": "marker_insertion",
+  "checks": [
+    "add marker",
+    "subtype updates by type",
+    "severity retained",
+    "OF marker earliest rule",
+    "clear markers"
+  ]
+}

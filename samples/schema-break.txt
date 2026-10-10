@@ -1,0 +1,8 @@
+User: Return valid JSON with fields step and status.
+Assistant: { "step": 1, "status": "ok" }
+
+User: Continue using the same schema.
+Assistant: { "step": 2, "status": "ok" }
+
+User: Continue again.
+Assistant: { "step": 3, "status": "ok"

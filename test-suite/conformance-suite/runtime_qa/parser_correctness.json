@@ -1,0 +1,10 @@
+{
+  "id": "parser_correctness",
+  "checks": [
+    "transcript labels parse",
+    "multi-line messages preserve content",
+    "roles normalize",
+    "JSONL parses",
+    "canonical envelope parses"
+  ]
+}
